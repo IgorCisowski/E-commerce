@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { NavLink, Link } from "react-router-dom";
 import { CartContext } from "../../components/context/context";
 import { useContext } from "react";
+import Logo from "../../assets/img/Logo.png";
 
 export const Navbar = () => {
   const { cart } = useContext(CartContext);
@@ -11,7 +12,7 @@ export const Navbar = () => {
       <nav>
         <div className="logo">
           <Link to="/">
-            <img src="/public/img/StoreLogo.png" alt="storeLogo" />
+            <img src={Logo} alt="storeLogo" />
             <p>Wodiwo</p>
           </Link>
         </div>
