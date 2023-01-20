@@ -1,0 +1,14 @@
+.cardContainer {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  gap: 4%;
+}
+
+.card {
+  flex-grow: 1;
+  height: 30vh;
+  min-width: 20%;
+  max-width: 20%;
+  border: 2px solid red;
+}

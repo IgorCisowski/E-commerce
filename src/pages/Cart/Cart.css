@@ -1,0 +1,137 @@
+.cartContainer {
+  width: 100%;
+  padding: 0 200px;
+  margin: 30px 0;
+}
+
+.cartContainer h2 {
+  font-weight: 400;
+  padding-bottom: 10px;
+  margin-right: auto;
+  border-bottom: 2px solid #222222;
+}
+
+.productDesc button {
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 20px;
+  border: none;
+  background-color: #cea600;
+  color: white;
+  transition: 0.3s;
+}
+
+.productDesc button:hover {
+  background-color: #ebc700;
+}
+
+/* ===========00 */
+
+.fullCart {
+  display: flex;
+  gap: 20px;
+  margin: 45px 0 105px;
+  width: 100%;
+}
+
+.fullCart ul {
+  flex-grow: 1;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fullCart li {
+  margin-top: 35px;
+  display: flex;
+  height: 15vh;
+  padding: 0 0 10px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #222222;
+}
+
+.imge {
+  height: 100%;
+  width: 20%;
+}
+
+.imge img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.itemDesc {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.itemDesc p {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.itemDesc span {
+  margin-bottom: 20px;
+}
+
+.itemDesc button {
+  cursor: pointer;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  text-align: left;
+}
+
+.keepCount {
+  align-self: center;
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.keepCount button {
+  cursor: pointer;
+  text-align: center;
+  line-height: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid #222222;
+}
+
+.keepCount span {
+  padding: 0 6px;
+}
+
+/* =================== */
+
+.checkOut {
+  position: sticky;
+  height: 20vh;
+  top: 7.2vh;
+  padding: 20px;
+  border: 1px solid #222222;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkOut button {
+  margin: 15px auto 0;
+  width: 100%;
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 20px;
+  border: none;
+  background-color: #cea600;
+  color: white;
+  transition: 0.3s;
+}
+
+.checkOut button:hover {
+  background-color: #ebc700;
+}

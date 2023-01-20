@@ -1,0 +1,15 @@
+.skeletonContainer {
+  position: absolute;
+  display: flex;
+  gap: 350px;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skeletonImg {
+  width: 200px;
+}

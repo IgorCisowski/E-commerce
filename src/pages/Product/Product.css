@@ -1,0 +1,53 @@
+.productContainer {
+  display: flex;
+  width: 100%;
+  padding: 0 200px;
+  margin: 100px 0 140px;
+}
+
+.productImage {
+  min-width: 32%;
+  max-width: 32%;
+  height: 50vh;
+  border-right: 2px solid #222222;
+  padding-right: 20px;
+}
+
+.productImage img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.productDesc {
+  flex-grow: 1;
+  padding-left: 20px;
+}
+
+.productDesc h3 {
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.productDesc span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 20px;
+}
+.productDesc p {
+  margin-bottom: 60px;
+}
+
+.productDesc button {
+  cursor: pointer;
+  padding: 10px 25px;
+  font-size: 20px;
+  border: none;
+  background-color: #cea600;
+  color: white;
+  transition: 0.3s;
+}
+
+.productDesc button:hover {
+  background-color: #ebc700;
+}
