@@ -1,5 +1,22 @@
-.skeletonsContainer {
+.skeleton {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   margin-top: 40px;
   display: flex;
-  gap: 13px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (max-width: 769px) {
+  .skeletonsContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+@media screen and (max-width: 450px) {
+  .skeletonsContainer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
 }

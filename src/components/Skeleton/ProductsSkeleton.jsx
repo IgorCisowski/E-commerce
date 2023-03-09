@@ -4,18 +4,18 @@ import "./ProductsSkeleton.css";
 
 export const ProductsSkeleton = () => {
   return (
-    <div className="skeletonsContainer">
-      <div className="firstProdut">
-        <Skeleton height={400} width={270} />
+    <div className="skeleton">
+      <div className="firstProduct">
+        <Skeleton height={400} width={264} />
       </div>
-      <div className="secondProdut">
-        <Skeleton height={400} width={270} />
+      <div className="secondProduct">
+        <Skeleton height={400} width={264} />
       </div>
-      <div className="thirdProdut">
-        <Skeleton height={400} width={270} />
+      <div className="thirdProduct">
+        <Skeleton height={400} width={264} />
       </div>
-      <div className="fourthProdut">
-        <Skeleton height={400} width={270} />
+      <div className="fourthProduct">
+        <Skeleton height={400} width={264} />
       </div>
     </div>
   );

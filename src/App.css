@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  max-width: 1950px;
+  margin: 0 auto;
+}
+
 body {
   font-size: 18px;
   font-family: sans-serif;
+  overflow-x: hidden;
 }

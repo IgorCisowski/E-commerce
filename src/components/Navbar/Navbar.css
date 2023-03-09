@@ -1,14 +1,29 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 7px 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #aaaaaa;
+  background-color: white;
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+
 nav {
   display: flex;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 20;
-  padding: 0 200px;
-  width: 100%;
-  height: 7vh;
-  border-bottom: 1px solid #aaaaaa;
-  background-color: white;
 }
 
 .logo a {
@@ -19,13 +34,14 @@ nav {
   color: black;
 }
 
+.logo-burger img,
 .logo img {
   height: 100%;
   max-height: 5vh;
 }
 
+.logo-burger p,
 .logo p {
-  height: 100%;
   text-transform: uppercase;
 }
 
@@ -60,8 +76,87 @@ nav a svg {
   border-radius: 50%;
   width: 18px;
   height: 18px;
+  font-size: 12px;
 }
 
-.active {
+.highlight {
   border-bottom: 2px solid #222222;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.logo-burger {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    box-shadow: 0 0 10px #222222;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 50%;
+    transform: translateX(-100%);
+    transition: 0.3s ease-in;
+    background-color: white;
+  }
+
+  nav ul a {
+    font-size: 30px;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  .logo-burger {
+    padding: 7px 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #222222;
+  }
+
+  .logo-burger p {
+    font-size: 22px;
+  }
+
+  .active {
+    transform: translateX(0);
+  }
+
+  .burger-menu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  .line {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+  }
+
+  .burger-menu.active .line:nth-of-type(1) {
+    transform: rotate(-45deg) translateY(11px);
+    transform-origin: center;
+  }
+
+  .burger-menu.active .line:nth-of-type(2) {
+    opacity: 0;
+  }
+  .burger-menu.active .line:nth-of-type(3) {
+    transform: rotate(45deg) translateY(-11px);
+    transform-origin: center;
+  }
 }

@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 export const Home = () => {
   return (
     <>
-      <div className="homeContainer">
-        <div className="banner">
+      <div className="home">
+        <div className="homeContainer">
           <h1>New season arrivals</h1>
           <p>Check out all the trends</p>
           <button>

@@ -1,9 +1,15 @@
+footer {
+  width: 100%;
+  background-color: #f6f6f6;
+}
+
 .footerContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 200px 0;
+  margin: 0 auto;
+  padding: 30px 24px 0;
+  max-width: 1200px;
   width: 100%;
-  background-color: #f6f6f6;
 }
 
 .company,
@@ -14,7 +20,7 @@
   align-items: flex-start;
   flex-grow: 1;
   margin-bottom: 20px;
-  min-width: 30%;
+  width: 33%;
 }
 
 .company p,
@@ -69,4 +75,16 @@ button:hover::after {
   width: 100%;
   border-top: 2px solid #aaaaaa;
   font-size: 16px;
+}
+
+@media screen and (max-width: 636px) {
+  .company,
+  .legal {
+    column-gap: 20px;
+  }
+  .socialMedia {
+    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+  }
 }
